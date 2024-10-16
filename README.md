@@ -1,22 +1,21 @@
-# Sports Booking App
+# SportSync
 
 
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Features](#features)
-3. [Project Structure](#project-structure)
-4. [Prerequisites](#prerequisites)
-5. [Environment Variables](#environment-variables)
-6. [Installation](#installation)
-7. [Running the Application](#running-the-application)
-8. [Deployment](#deployment)
-9. [Assumptions & Limitations](#assumptions--limitations)
-10. [Deployed Links](#deployed-links)
+3. [Prerequisites](#prerequisites)
+4. [Environment Variables](#environment-variables)
+5. [Installation](#installation)
+6. [Running the Application](#running-the-application)
+7. [Deployment](#deployment)
+8. [Assumptions & Limitations](#assumptions--limitations)
+9. [Deployed Links](#deployed-links)
 
 ---
 
 ## Introduction
-This project is a **Sports Booking App** that allows users to book sports courts at various centers. It supports viewing available courts, managing bookings, and handling different sports for specific centers.
+This project is a **SportSync** that allows users to book sports courts at various centers. It supports viewing available courts, managing bookings, and handling different sports for specific centers.
 
 The backend is built using **Node.js**, **Express**, and **MongoDB**, while the frontend (if included) can be built using frameworks like **React** or **Angular**. The backend handles APIs for managing centers, courts, sports, and bookings.
 
