@@ -63,7 +63,6 @@ cd sports-booking-app
 Install dependencies:
 
 ```bash
-Copy code
 npm install
 ```
 Set up your environment variables by creating a .env file as explained above.
@@ -76,7 +75,6 @@ Start the MongoDB server: If you are using a local MongoDB instance, make sure i
 Run the backend:
 
 ```bash
-Copy code
 npm start
 ```
 The backend API should now be running on the specified host and port. By default, it will run at http://127.0.0.1:8080.
