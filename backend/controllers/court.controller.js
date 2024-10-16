@@ -1,13 +1,12 @@
 import Court from '../models/court.model.js';
 
 export async function createCourt(req, res) {
-  const { name, centerId, sportId } = req.body;
+  const { name, centerSportId } = req.body;
 
   try {
     const newCourt = new Court({
       name,
-      centerId,
-      sportId
+      centerSportId
     });
 
     await newCourt.save();
@@ -19,7 +18,7 @@ export async function createCourt(req, res) {
 
 export async function getAllCourts(req, res) {
     try {
-      const courts = await Court.find().populate('centerId sportId');
+      const courts = await Court.find().populate('centerSportId');
       res.status(200).json({ message: 'Courts fetched successfully', data: courts });
     } catch (err) {
       res.status(500).json({ message: 'Failed to fetch courts', error: err.message });
