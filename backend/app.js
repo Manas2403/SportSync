@@ -6,7 +6,7 @@ import courtRoutes from './routes/court.routes.js';
 import bookingRoutes from './routes/booking.routes.js';
 import sportRoutes from './routes/sport.routes.js';
 import centerRoutes from './routes/center.routes.js';
-
+import authRoutes from './routes/user.routes.js';
 // Load environment variables from .env file
 dotenv.config();
 
@@ -32,7 +32,7 @@ app.use('/center', centerRoutes);  // Center-related routes
 app.use('/sport', sportRoutes);    // Sport-related routes
 app.use('/court', courtRoutes);    // Court-related routes
 app.use('/booking', bookingRoutes); // Booking-related routes
-
+app.use('/auth', authRoutes); // Auth-related routes
 // Start the server, using environment variables if provided, otherwise default values
 const PORT = process.env.PORT || 8080;
 const HOST = process.env.HOST || '127.0.0.1';

@@ -14,7 +14,7 @@ const router = new Router();
 router.post("/register", registerUser);
 
 // Route to create a new sport - handled by the createSport controller
-router.post("/", loginUser);
+router.post("/login", loginUser);
 
 // Exporting the router for use in other parts of the application
 export default router;
