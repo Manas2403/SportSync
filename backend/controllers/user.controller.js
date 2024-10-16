@@ -1,5 +1,5 @@
 import User from "../models/user.model.js";
-import { hash_password, getJwt } from "../utils/authUtils.js"; // Assuming authUtils has the hashing and JWT logic
+import { hash_password, getJwt } from "../utils/password.js"; // Assuming authUtils has the hashing and JWT logic
 import { response_200, response_201, response_400, response_401, response_500 } from "../utils/responseCodes.js";
 
 // Register Controller
