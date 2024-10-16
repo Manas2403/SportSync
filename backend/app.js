@@ -13,6 +13,11 @@ dotenv.config();
 // Initialize an Express application
 const app = express();
 
+
+app.get('/', (req, res) => {
+    res.status(200).send({ message: 'Server is running' });
+  });
+
 // Middlewares for parsing JSON and URL-encoded requests, and handling CORS
 app.use(cors());
 app.use(bodyParser.json());
@@ -20,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Import and connect to the database
 import connectDB from './db.config.js';
-connectDB();  // Initialize database connection
+await connectDB();  // Initialize database connection
 
 // Routes for different modules
 app.use('/center', centerRoutes);  // Center-related routes
