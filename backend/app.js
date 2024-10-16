@@ -37,6 +37,6 @@ app.use('/booking', bookingRoutes); // Booking-related routes
 const PORT = process.env.PORT || 8080;
 const HOST = process.env.HOST || '127.0.0.1';
 
-app.listen(PORT, HOST, () => {
-  console.log(`Server is running on http://${HOST}:${PORT}/`);
+app.listen(PORT, async () => {
+  console.log(`Server is running on port ${PORT}/`);
 });
