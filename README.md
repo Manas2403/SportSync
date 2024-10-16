@@ -57,8 +57,8 @@ PORT=8080
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-repo/sports-booking-app.git
-cd sports-booking-app
+git clone https://github.com/Manas2403/SportSync.git
+cd SportSync
 ```
 Install dependencies:
 
