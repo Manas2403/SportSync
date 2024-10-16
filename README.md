@@ -86,11 +86,7 @@ Backend
 Make sure your MongoDB URI in the .env file points to a production-ready MongoDB cluster (e.g., MongoDB Atlas).
 Deploy the backend on a platform like Heroku, AWS, or DigitalOcean.
 Update the .env file for the production environment with the new PORT and MONGO_URI.
-Frontend (Optional)
-If a frontend is included:
 
-Build the frontend with npm run build.
-Deploy the frontend to Netlify, Vercel, or any other static hosting service.
 
 
 
