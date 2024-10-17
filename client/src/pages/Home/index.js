@@ -1,7 +1,6 @@
 // src/pages/Home.js
 import React, { useState } from "react";
 import FullCalendar from "@fullcalendar/react";
-import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import { Container, Typography } from "@mui/material";
@@ -21,17 +20,10 @@ const Home = () => {
         <div className="min-h-screen">
             <Navbar />
             <Container className="mt-6 max-w-full px-6">
-                <Typography variant="h4" gutterBottom>
-                    Event Calendar
-                </Typography>
                 <div className="w-full">
                     <FullCalendar
-                        plugins={[
-                            dayGridPlugin,
-                            timeGridPlugin,
-                            interactionPlugin,
-                        ]}
-                        initialView="dayGridMonth"
+                        plugins={[timeGridPlugin, interactionPlugin]}
+                        initialView="timeGridWeek" // Set the default view to timeGridWeek
                         events={events}
                         dateClick={handleDateClick}
                         editable
