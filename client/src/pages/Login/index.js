@@ -8,11 +8,11 @@ import {
     Box,
     Alert,
 } from "@mui/material";
-import { login } from "../../Api.js"; // Create this function in api.js
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { login } from "../../Api.js";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-    const navigate = useNavigate(); // Initialize useNavigate
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         email: "",
         password: "",
@@ -31,12 +31,11 @@ const Login = () => {
         setSuccess(false);
 
         try {
-            const response = await login(formData); // Call the login function
-            console.log(response); // You can handle token storage here if needed
+            const response = await login(formData);
+            console.log(response);
             setSuccess(true);
-            // Redirect to the home page after successful login
             setTimeout(() => {
-                navigate("/"); // Navigate to home page
+                navigate("/");
             }, 2000);
         } catch (error) {
             setError(error.response?.data?.message || "Login failed");

@@ -9,10 +9,10 @@ import {
     Alert,
 } from "@mui/material";
 import { signup } from "../../Api.js";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
-    const navigate = useNavigate(); // Initialize useNavigate
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -35,7 +35,7 @@ const Signup = () => {
             await signup(formData);
             setSuccess(true);
             setTimeout(() => {
-                navigate("/login"); // Navigate to login page after 2 seconds
+                navigate("/login");
             }, 2000);
         } catch (error) {
             setError(error.response?.data?.message || "Signup failed");
